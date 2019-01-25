@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width.initial-scale=1">
+	<title>form</title>
+	<style>
+	*{
+		box-sizing: border-box;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+
+	.bg-img{
+		background-image: url("picture11.jpg");
+		min height :380px;
+		background-position: centre;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+	<div class="bg-img">
+	<form action="form.html" method="post" class="container">
+	<h2>Please Enter Your Details</h2>
+	<p>Fill the application form below and submit</p>
+		<b>Name*</b><input type="text" placeholder="firstname" name="username" required><input type="text" placeholder="lastname" name="username" required><br>
+		<b>E-Mail Address*</b><input type="email" placeholder="abcd@example.com" name="email"required><br>
+		<b>Phone Number*</b><input type="number" placeholder="phone number" name="number" required><br>
+		Gender*<input type="gender" placeholder="gender" name="gender" required><br>
+		Citizen*<input type="citizen" placeholder="citizen" name="citizen" required><br>
+		Date of Birth*<input type=""><br>
+		Address*<><br>
+		<button type="submit" class="btn">Submit</button>
+	</form>
+</div>
+</body>
+</html>
